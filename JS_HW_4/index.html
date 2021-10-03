@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru>
+<head>
+    <meta charset=" UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script>
+    /* var numArr = {
+        units: 0,
+        tens: 0,
+        hundreds: 0
+    }
+
+    var num = parseInt(prompt('Введите число от 0 до 999 '));
+    if (num <= 999) {
+        numArr.units = Math.floor(num % 10);
+        numArr.tens = Math.floor(num / 10 % 10);
+        numArr.hundreds = Math.floor(num / 100 % 10);
+    } else {
+        console.log(' зря вы так')
+    }
+    console.log(numArr); */
+
+    var cart = [
+        {
+            name: 'skirt',
+            size: 'M',
+            price: 100
+        },
+        {
+            name: 'Coat',
+            size: 'L',
+            price: 150
+        }
+
+    ]
+
+    function addItemToCart(name, size, price) {
+        cart.push({
+            name: name,
+            size: size,
+            price, price
+        });
+    }
+
+    function countCartPrice(arr) {
+        var sum = 0;
+        for (let item of arr) {
+
+            sum += item.price
+        }
+        return sum;
+    }
+    console.log(cart)
+    console.log(countCartPrice(cart))
+
+    addItemToCart('boots', 'L', 200)
+    console.log(countCartPrice(cart))
+    console.log(cart)
+</script>
+</head>
+
+<body>
+
+</body>
+
+</html>
