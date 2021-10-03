@@ -1,0 +1,29 @@
+.top {
+    display: flex;
+}
+
+.catalog {
+    background-color: aquamarine;
+    min-width: 350px;
+    width: 50%;
+    height: 200px;
+}
+
+.cart {
+    background-color:blueviolet ;
+    width: 50%;
+    height: 200px;
+}
+
+.tovar { 
+    display: flex;
+    margin: 15px;
+    background: white;
+    border-radius: 5px;
+    justify-content: space-around;
+}
+
+.mini_img {
+    margin: 10px;
+    height: 64px;
+}
